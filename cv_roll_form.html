@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Rashtriya Chemicals and Fertilizers Limited</title>
+    <link rel="shortcut icon" href="http://20.207.198.140/rcf-candidate_onboarding/images/favicon.ico"
+        type="image/x-icon">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        body {
+            color: #000;
+            overflow-x: hidden;
+            height: 100%;
+            background-image: url("https://i.imgur.com/GMmCQHC.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+
+        .card {
+            padding: 30px 40px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border: none !important;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .blue-text {
+            color: #00BCD4
+        }
+
+        .form-control-label {
+            margin-bottom: 0
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 8px 15px;
+            border-radius: 5px !important;
+            margin: 5px 0px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            font-size: 18px !important;
+            font-weight: 300
+        }
+
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00BCD4;
+            outline-width: 0;
+            font-weight: 400
+        }
+
+        .btn-block {
+            text-transform: uppercase;
+            font-size: 15px !important;
+            font-weight: 400;
+            height: 43px;
+            cursor: pointer
+        }
+
+        .btn-block:hover {
+            color: #fff !important
+        }
+
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+
+        .hover-text:hover {
+            animation: zoom-in 3s ease normal;
+        }
+
+        @keyframes zoom-in {
+
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+
+
+
+        @media screen and (max-width: 1370px) {
+            #dsubelong {
+                margin-top: 7%;
+            }
+        }
+    </style>
+</head>
+
+<body className='snippet-body'>
+
+    <header class="rc-head">
+        <div class="container">
+            <div class="rch-in">
+                <div class="logo">
+                    <a href="https://www.rcfltd.com"><img
+                            src="http://20.207.198.140/rcf-candidate_onboarding/images/logo.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3>Rashtriya Chemicals and Fertilizers Limited</h3>
+                <p class="blue-text">(A Goverment of India Undertaking)</p>
+                <p style="margin-top:-13px;" class="blue-text">Chembur, Mumbai - 400074.</p>
+
+                <h3>Attestation Form</h3>
+                <div class="alert alert-d alert-danger">
+                    Please fill all mandatory fields
+                </div>
+
+                <div class="alert alert-s alert-success">
+                    Data Saved succesfully
+                </div>
+
+                <div class="card">
+                    <form class="form-card" enctype="multipart/form-data" id="form1" onsubmit="event.preventDefault()">
+                        <div class="row">
+                            <div class="col-sm-4">
+
+                                <div class="col-sm-12">
+                                    <img class="fa-upload"
+                                        src="https://cvbay.com/wp-content/uploads/2017/03/dummy-image.jpg" id="output"
+                                        width="200" height="265" style="border:2px solid;" />
+
+                                </div>
+                                <div class="col-sm-12">
+                                    <label style="font-size: 13px; color: rgb(82, 85, 80);">(Passport size
+                                        photo 5cm X 7cm)</label>
+                                </div>
+                                <div class="col-sm-12 m-0 p-0">
+                                    <span style="color: red;font-size: 13px;" id="imgvalid">please upload image 200
+                                        px by 250px</span>
+                                </div>
+                                <div class="col-sm-12">
+
+                                    <span class="btn btn-sucess border rounded-4 border-success mt-3 hover-text">
+                                        <label style=" width: 159px; color:#28a745 !important; "
+                                            class="fa fa-upload label text- hover-lable " for="file"> Profile picture
+                                            upload</label>
+                                    </span>
+                                    <!-- margin:0% !important;  -->
+
+                                    <input type="file" onchange="loadFile(event)"
+                                        accept="image/gif, image/jpeg, image/png" name="file" id="file"
+                                        style="display: none;">
+                                    <input type="hidden" id="fileNamePath" name="fileNamePath">
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-7 m-0 p-0" style="text-align: left; color:rgb(85, 80, 80);">
+                                <p>
+                                    1. Furnishing of false information or suppression of any factual
+                                    in the attestation for would be a disqualification and is likely to render the
+                                    candidate unfit for employment under
+                                    the Government.
+                                </p>
+                                <p>
+                                    2. if detained, convicted, debarred etc. subsequent to the completion and submission
+                                    of this form, details should be
+                                    communicated immediately to the employer to whom the attestation form has been sent
+                                    earlier falling which it will be
+                                    deerned to be suppression of factual information
+
+                                </p>
+                                <p>
+                                    3. If the fact that false information has been furnished or that there has been
+                                    suppression of any factual information
+                                    in the attestation form comes to notice at any time during the service of a person,
+                                    his/her services would be liable to
+                                    be terminated.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="row">
+                            </div> -->
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex">
+                                <label class="form-control-label px-12">
+                                    Name in full (in block capitals) with aliasis, If any. Please indicate if you added
+                                    or dropped at any stage any part of your name or surname :
+                                    <span class="text-danger"> *</span>
+                                </label>
+                                <!-- <input type="text" id="fname" name="fname" placeholder="Enter Member's Name" onblur="validate(1)">  -->
+                            </div>
+                            <hr>
+                            <div class="form-group col-sm-4 flex-column d-flex">
+                                <label class="form-control-label px-3">Surname
+                                    <span class="text-danger"> *</span>
+                                </label>
+                                <br><input type="text" id="sname" name="sname" placeholder="Enter surname"
+                                    onblur="validate(1)">
+                            </div>
+
+                            <div class="form-group col-sm-4 flex-column d-flex">
+                                <label class="form-control-label px-3">Name
+                                    <span class="text-danger"> *</span>
+                                </label>
+                                <br><input type="text" id="fname" name="fname" placeholder="Enter Your Name"
+                                    onblur="validate(2)">
+                            </div>
+
+                            <div class="form-group col-sm-4 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Name of Father/Husband
+                                    <span class="text-danger"> *</span>
+                                </label><br>
+                                <input type="text" id="fathername" name="fathername"
+                                    placeholder="Enter Father/Husband Name" onblur="validate(3)">
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Present
+                                    address in full (i.e village) Thana and
+                                    district or House No. Lane / Street / Road / and Town & Pin Code No.<span
+                                        class="text-danger"> *</span></label> <input type="text" id="paddress"
+                                    name="paddress" placeholder="Enter Present Address" onblur="validate(4)"> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Permanant House address in full (i.e village) Thane
+                                    and district or House No. Lane / Street / Road / and Town & Pin Code No.<span
+                                        class="text-danger"> *</span></label> <input type="text" id="phaddress"
+                                    name="phaddress" placeholder="Enter Permanant Address" onblur="validate(5)"> </div>
+                        </div>
+
+                        
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                class="form-control-label px-3"> Pincode of permanant address
+                                <span class="text-danger"> *</span></label> <input type="number" id="ppincode"
+                                name="ppincode" placeholder="Enter Pincode" onblur="validate(6)"> </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Nationality<span class="text-danger">
+                                        *</span></label> <input type="text" id="nationality" name="nationality"
+                                    placeholder="Enter Nationality" onblur="validate(7)"> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">If
+                                    originally a resident of Pakistan the address in
+                                    that country and the date of migration to India Union</label>
+                                <input type="text" id="oaddress" name="oaddress" placeholder="Enter Address">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Date of
+                                    Birth<span class="text-danger">
+                                        *</span></label> <input type="date" id="dob" name="dob"
+                                    onfocus="(this.type=data)" onblur="validate(8)"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Present
+                                    Age<span class="text-danger">
+                                        *</span></label> <input type="number" id="preage" name="preage"
+                                    placeholder="Enter Present Age" onblur="validate(9)"> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Age of
+                                    Matriculation<span class="text-danger">
+                                        *</span></label> <input type="number" id="agemat" name="agemat"
+                                    placeholder="Enter Age of Matriculation" onblur="validate(10)"> </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Place of
+                                    Birth, District and State in which
+                                    situated<span class="text-danger"> *</span></label> <input type="text" id="pob"
+                                    name="pob" placeholder="Place of Birth, District and State" onblur="validate(11)">
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">District
+                                    and State to which you belong<span class="text-danger"> *</span></label> <input
+                                    type="text" id="dsubelong" name="dsubelong" placeholder="Enter District and State"
+                                    onblur="validate(12)">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">District
+                                    and State to which your father origianlly
+                                    belong<span class="text-danger"> *</span></label> <input type="text" id="dsufather"
+                                    name="dsufather" placeholder="Enter District and State" onblur="validate(13)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Your
+                                    Religion<span class="text-danger">
+                                        *</span></label> <input type="text" id="ureligion" name="ureligion"
+                                    placeholder="Religion" onblur="validate(14)"> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Are you
+                                    a member of a Scheduled Caste / Scheduled
+                                    tribe / Other Backward Class ? Answer yes or no and if answer is 'Yes' State the
+                                    name of there of.</label> <input type="text" id="ruscst" name="ruscst"
+                                    placeholder="Enter Yes/No" onblur="validate(15)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-5 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Have you ever been arrested ?
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="arrestedY" name="arrested" value="Yes">
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="arrestedN" name="arrested" value="No">
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-5 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Have you ever been prosecuted ?
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="prosecutedY" name="prosecuted" value="Yes" >
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="prosecutedN" name="prosecuted" value="No" >
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-5 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    You ever been kept under detention ?
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="detentionY" name="detention" value="Yes" >
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="detentionN" name="detention" value="No" >
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-5 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Have you ever been bound down ?
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="boundY" name="bound" value="Yes" >
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="boundN" name="bound" value="No" >
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-5 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Have you ever been fined by Court of Law ?
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="lawY" name="law" value="Yes" >
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="lawN" name="law" value="No" >
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-5 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Have you ever been convicted by Court of Law for any offences ?
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="offencesY" name="offences" value="Yes" >
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="offencesN" name="offences" value="No" >
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="form-group col-sm-6"> <button type="submit"
+                                    class="submit_button btn-block submit-btn">Submit</button> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript'>
+
+        $('#profile').change(() => {
+            let image = $('<img id="profileSpace" src="#" alt="Profile" width="200" height="200">')
+            var files = $('#profile')[0].files[0];
+            if (files) {
+                let reader = new FileReader();
+                reader.onload = (e) => {
+                    console.log(e.target.result);
+                    image.appendTo('#space');
+                    $('#profileSpace').attr('src', event.target.result);
+                }
+                reader.readAsDataURL(files);
+            }
+
+        })
+    </script>
+    <script type='text/javascript'>function validate(val) {
+            v1 = document.getElementById("fname");
+            v2 = document.getElementById("sname");
+            v3 = document.getElementById("fathername");
+            v4 = document.getElementById("paddress");
+            v5 = document.getElementById("phaddress");
+            v6 = document.getElementById("ppincode");
+            v7 = document.getElementById("nationality");
+            v8 = document.getElementById("dob");
+            v9 = document.getElementById("preage");
+            v10 = document.getElementById("agemat");
+            v11 = document.getElementById("pob");
+            v12 = document.getElementById("dsubelong");
+            v13 = document.getElementById("dsufather");
+            v14 = document.getElementById("ureligion");
+            v15 = document.getElementById("ruscst");
+
+
+            flag1 = true;
+            flag2 = true;
+            flag3 = true;
+            flag4 = true;
+            flag5 = true;
+            flag6 = true;
+            flag7 = true;
+            flag8 = true;
+            flag9 = true;
+            flag10 = true;
+            flag11 = true;
+            flag12 = true;
+            flag13 = true;
+            flag14 = true;
+            flag15 = true;
+
+            if (val >= 1 || val == 0) {
+                if (v1.value == "") {
+                    v1.style.borderColor = "red";
+                    flag1 = false;
+                }
+                else {
+                    v1.style.borderColor = "green";
+                    flag1 = true;
+                }
+            }
+
+            if (val >= 2 || val == 0) {
+                if (v2.value == "") {
+                    v2.style.borderColor = "red";
+                    flag2 = false;
+                }
+                else {
+                    v2.style.borderColor = "green";
+                    flag2 = true;
+                }
+            }
+            if (val >= 3 || val == 0) {
+                if (v3.value == "") {
+                    v3.style.borderColor = "red";
+                    flag3 = false;
+                }
+                else {
+                    v3.style.borderColor = "green";
+                    flag3 = true;
+                }
+            }
+            if (val >= 4 || val == 0) {
+                if (v4.value == "") {
+                    v4.style.borderColor = "red";
+                    flag4 = false;
+                }
+                else {
+                    v4.style.borderColor = "green";
+                    flag4 = true;
+                }
+            }
+            if (val >= 5 || val == 0) {
+                if (v5.value == "") {
+                    v5.style.borderColor = "red";
+                    flag5 = false;
+                }
+                else {
+                    v5.style.borderColor = "green";
+                    flag5 = true;
+                }
+            }
+            if (val >= 6 || val == 0) {
+                if (v6.value == "") {
+                    v6.style.borderColor = "red";
+                    flag6 = false;
+                }
+                else {
+                    v6.style.borderColor = "green";
+                    flag6 = true;
+                }
+            }
+            if (val >= 7 || val == 0) {
+                if (v7.value == "") {
+                    v7.style.borderColor = "red";
+                    flag7 = false;
+                }
+                else {
+                    v7.style.borderColor = "green";
+                    flag7 = true;
+                }
+            }
+            if (val >= 8 || val == 0) {
+                if (v8.value == "") {
+                    v8.style.borderColor = "red";
+                    flag8 = false;
+                }
+                else {
+                    v8.style.borderColor = "green";
+                    flag8 = true;
+                }
+            }
+            if (val >= 9 || val == 0) {
+                if (v9.value == "") {
+                    v9.style.borderColor = "red";
+                    flag9 = false;
+                }
+                else {
+                    v9.style.borderColor = "green";
+                    flag9 = true;
+                }
+            }
+            if (val >= 10 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+            if (val >= 11 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+            if (val >= 12 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+            if (val >= 13 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+            if (val >= 14 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+            if (val >= 15 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+
+
+            flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6 && flag7 && flag8 && flag9 && flag10 && flag11 && flag12 && flag13 && flag14 && flag15;
+
+            return flag;
+        }</script>
+
+    <script type='text/javascript'>
+        var loadFile = function (event) {
+
+            $("#imgvalid").hide();
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+            setTimeout(() => {
+                var result = validateImage();
+                if (result == false) {
+                    $("#imgvalid").show();
+                    $("#output").attr('src', 'https://cvbay.com/wp-content/uploads/2017/03/dummy-image.jpg')
+                }
+                else
+                    $("#imgvalid").hide();
+            }, 1000);
+
+
+        };
+
+
+
+
+        function validateImage() {
+            var image = document.getElementById('output');
+            debugger
+            if (image.naturalHeight <= 265 && image.naturalWidth <= 200) {
+
+                return true;
+            }
+            return false;
+        }
+
+
+        $(document).ready(function () {
+            $("#imgvalid").hide();
+            $(".alert-d").hide();
+            $(".alert-s").hide();
+            let searchParams = new URLSearchParams(window.location.search)
+            searchParams.has('application_id') // true
+            let param = searchParams.get('application_id')
+            console.log("ID.. " + param)
+            getDraftDataById(param);
+
+            $('#offencesN').prop('checked', true);
+            $('#arrestedN').prop('checked', true);
+            $('#prosecutedN').prop('checked', true);
+            $('#detentionN').prop('checked', true);
+            $('#boundN').prop('checked', true);
+            $('#lawN').prop('checked', true);
+            $('#offencesN').prop('checked', true);
+            $(".submit_button").click(function (e) {
+                e.preventDefault();
+                let validate = validateFields();
+                if (validate == false) {
+                    $(".alert-d").show();
+                    $('body, html').animate({ scrollTop: $('.alert-d').offset().top }, 'slow');
+                    $('.alert-s').hide();
+                    return false;
+                }
+                var fd = new FormData($('#form1')[0]);
+                fd.append('application_id', param);
+
+                for (item of fd) {
+                    console.log(item[0], item[1]);
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: "http://20.207.198.140:3000/saveCvrollData",
+                    crossDomain: true,
+                    dataType: "text",
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    data: fd,
+
+                    // data: JSON.stringify({
+                    //     "type": "cvroll",
+                    //     "Surname": $('#sname').val(),
+                    //     "Name": $('#fname').val(),
+                    //     "Name of Father / Husband": $('#fathername').val(),
+                    //     "Present Address": $('#paddress').val(),
+                    //     "Permanent House Address": $('#phaddress').val(),
+                    //     "Migrant Address": $('#oaddress').val(),
+                    //     "Nationality": $('#nationality').val(),
+                    //     "Date of Birth": $('#dob').val(),
+                    //     "Present Age": $('#preage').val(),
+                    //     "Age of Matriculation": $('#agemat').val(),
+                    //     "District and State to which you belong": $('#dsubelong').val(),
+                    //     "District and State to which your father belong": $('#dsufather').val(),
+                    //     "Your Religion": $('#ureligion').val(),
+                    //     "File": formData,
+                    // }),
+
+
+                    success: function (data) {
+                        $(".alert-s").show();
+                        removecss();
+                        $("#output").attr('src', 'https://cvbay.com/wp-content/uploads/2017/03/dummy-image.jpg')
+                        $('#form1 input[type="text"]').val('');
+                        $(".alert-d").hide();
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+
+                });
+                function validateFields() {
+                    if ($("#output").attr('src') == 'https://cvbay.com/wp-content/uploads/2017/03/dummy-image.jpg') { $('#output').css({ 'border-color': 'red' }); return false; }
+                    if ($('#sname').val() == '') { $('#sname').css({ 'border-color': 'red' }); return false; }
+                    if ($('#fname').val() == '') { $('#fname').css({ 'border-color': 'red' }); return false; }
+                    if ($('#fathername').val() == '') { $('#fathername').css({ 'border-color': 'red' }); return false; }
+                    if ($('#paddress').val() == '') { $('#paddress').css({ 'border-color': 'red' }); return false; }
+                    if ($('#phaddress').val() == '') { $('#phaddress').css({ 'border-color': 'red' }); return false; }
+                    if ($('#ppincode').val() == '') { $('#ppincode').css({ 'border-color': 'red' }); return false; }
+                    if ($('#dob').val() == '') { $('#dob').css({ 'border-color': 'red' }); return false; }
+                    if ($('#preage').val() == '') { $('#preage').css({ 'border-color': 'red' }); return false; }
+                    if ($('#agemat').val() == '') { $('#agemat').css({ 'border-color': 'red' }); return false; }
+                    if ($('#pob').val() == '') { $('#pob').css({ 'border-color': 'red' }); return false; }
+                    if ($('#dsubelong').val() == '') { $('#dsubelong').css({ 'border-color': 'red' }); return false; }
+                    if ($('#dsufather').val() == '') { $('#dsufather').css({ 'border-color': 'red' }); return false; }
+                    if ($('#ureligion').val() == '') { $('#ureligion').css({ 'border-color': 'red' }); return false; }
+                    return true;
+                }
+                function removecss() {
+                    $("#form1")[0].reset();
+
+                    $("#output").css({ "border": "2px solid #ccc" });
+                    $('#sname').css({ "border": "1px solid #ccc" });
+                    $('#fname').css({ "border": "1px solid #ccc" });
+                    $('#fathername').css({ "border": "1px solid #ccc" });
+                    $('#paddress').css({ "border": "1px solid #ccc" });
+                    $('#phaddress').css({ "border": "1px solid #ccc" });
+                    $('#ppincode').css({ "border": "1px solid #ccc"})
+                    $('#oaddress').css({ "border": "1px solid #ccc" });
+                    $('#dob').css({ "border": "1px solid #ccc" });
+                    $('#preage').css({ "border": "1px solid #ccc" });
+                    $('#agemat').css({ "border": "1px solid #ccc" });
+                    $('#pob').css({ "border": "1px solid #ccc" });
+                    $('#dsubelong').css({ "border": "1px solid #ccc" });
+                    $('#dsufather').css({ "border": "1px solid #ccc" });
+                    $('#ureligion').css({ "border": "1px solid #ccc" });
+                    $('#ruscst').css({ "border": "1px solid #ccc" });
+                }
+            });
+        });
+
+
+        //FUNCTION FOR GEETING DRAFY DATA
+        function getDraftDataById(id) {
+            $.ajax({
+                type: 'GET',
+                url: "http://20.207.198.140:3000/getCvrollData/" + id,
+                crossDomain: true,
+                data: JSON.stringify(),
+                success: function (data) {
+                    $(".alert").hide();
+                    let resp = JSON.stringify(data)
+                    let bankData = JSON.parse(resp);
+                    console.log("Image " + bankData.imagePath)
+
+                    $("#output").attr("src", bankData.imagePath);
+                    // let arry = bankData.imagePath.split('/') ;
+                    // let lastElement = arry[arry.length - 1];
+                    document.getElementById("fileNamePath").value = bankData.imagePath;
+
+                    document.getElementById("sname").value = (bankData.Surname);
+                    document.getElementById("fname").value = (bankData.Name);
+                    document.getElementById("fathername").value = (bankData.Name_of_Father_Or_Husband);
+                    document.getElementById("paddress").value = (bankData.Present_address).replace(';', ',');
+                    document.getElementById("phaddress").value = (bankData.Permanant_address).replace(';', ',');
+                    document.getElementById("ppincode").value = (bankData.Permanant_pincode);
+                    document.getElementById("oaddress").value = (bankData.NRI_address).replace(';', ',');
+                    document.getElementById("nationality").value = (bankData.Nationality);
+                    document.getElementById("dob").value = (bankData.BirthDate);
+                    document.getElementById("preage").value = (bankData.Age);
+                    document.getElementById("agemat").value = (bankData.Matriculation_age);
+                    document.getElementById("pob").value = (bankData.Birth_Place).replace(';', ',');
+                    document.getElementById("dsubelong").value = (bankData.your_belong_state_or_District).replace(';', ',');
+                    document.getElementById("dsufather").value = (bankData.father_belong_state_or_District).replace(';', ',');
+                    document.getElementById("ureligion").value = (bankData.Religion);
+                    document.getElementById("ruscst").value = (bankData.Caste_class).replace(';', ',');
+                    //$('#form2 input[type="text"]').val('');
+                },
+                error: function (e) {
+                    console.log(e);
+                },
+                dataType: "json",
+                contentType: "application/json"
+            });
+        }
+    </script>
+</body>
+
+</html>

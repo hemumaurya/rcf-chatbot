@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Rashtriya Chemicals and Fertilizers Limited</title>
+    <link rel="shortcut icon" href="http://20.207.198.140/rcf-candidate_onboarding/images/favicon.ico"
+        type="image/x-icon">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+
+        body {
+            color: #000;
+            overflow-x: hidden;
+            height: 100%;
+            background-image: url("https://i.imgur.com/GMmCQHC.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+
+        .card {
+            padding: 30px 40px;
+            margin-top: 24px;
+            margin-bottom: 60px;
+            border: none !important;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        input:hover,
+        textarea:hover,
+        select:hover {
+            border-color: #03a241;
+        }
+
+        .blue-text {
+            color: #00BCD4
+        }
+
+        .form-control-label {
+            margin-bottom: 0
+        }
+
+        input,
+        textarea,
+        button,
+        select {
+            padding: 8px 15px;
+            border-radius: 5px !important;
+            margin: 5px 0px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            font-size: 18px !important;
+            font-weight: 300
+        }
+
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00BCD4;
+            outline-width: 0;
+            font-weight: 400
+        }
+
+        .btn-block {
+            text-transform: uppercase;
+            font-size: 15px !important;
+            font-weight: 400;
+            height: 43px;
+            cursor: pointer
+        }
+
+        .btn-block:hover {
+            color: #fff !important
+        }
+
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+
+        @media screen and (max-width: 1370px) {}
+    </style>
+</head>
+
+<body className='snippet-body'>
+
+    <header class="rc-head">
+        <div class="container">
+            <div class="rch-in">
+                <div class="logo">
+                    <a href="https://www.rcfltd.com"><img
+                            src="http://20.207.198.140/rcf-candidate_onboarding/images/logo.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3>Employee's Provident Fund Organization</h3>
+                <p class="blue-text">Employee's Provident Funds Scheme, 1992 (Paragraph 34 & 57)</p>
+                <p class="blue-text">Employee's Pension Scheme, 1995 (Paragraph 24)</p>
+                <p>(Declaration by a person taking up employment in any estabilshment on which EPF Scheme, 1952 and for
+                    EPS, 1995 is applicable)</p>
+                <div class="alert alert-d alert-danger">
+                    Please fill all mandatory fields
+                </div>
+
+                <div class="alert alert-s alert-success">
+                    Data Save succesfully
+                </div>
+
+
+
+                <div class="card">
+                    <form class="form-card" id="form3" onsubmit="event.preventDefault()">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex mt-1"> <label
+                                    class="form-control-label px-3">Name of the member:<span class="text-danger">
+                                        *</span></label> <input type="text" id="fname" name="mName"
+                                    placeholder="Enter Member's Name" onblur="validate(1)"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <div class=" justify-content-start text-left">
+                                    <label class="form-control-label px-3">
+                                        Father's Name:
+                                        <span class="text-danger"> *</span>
+                                        <input type="radio" id="fNamebox" name="fNamebox" value="father">
+                                    </label>
+
+                                    <label class="form-control-label px-3">
+                                        Spouse's Name:
+                                        <span class="text-danger"> *</span>
+                                        <input type="radio" id="sNamebox" name="fNamebox" value="spouse">
+                                    </label>
+
+                                </div>
+                                <input type="text" id="lname" name="fsName" placeholder="Enter Father's / Spouse's Name"
+                                    onblur="validate(2)">
+                            </div>
+                        </div>
+
+
+                        <div class="row justify-content-between text-left">
+                            <!-- <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Date of Birth: (DD/MM/YYYY)<span
+                                        class="text-danger"> *</span></label>
+                                <input type="date" id="dob" name="dob" placeholder="Enter Date of Birth"
+                                    onblur="validate(3)">
+                            </div> -->
+
+
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Gender: <span class="text-danger"> *</span></label>
+                                <select name="gender" id="gender" class="form-control " onblur="validate(3)">
+                                    <option value="">-----select-----</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Transgender">Transgender</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex" id="email-id">
+                                <label class="form-control-label px-3">Email ID: <span class="text-danger">
+                                        *</span></label> <input type="text" id="email" name="email"
+                                    placeholder="Enter Email ID" onblur="validate(4)">
+                            </div>
+
+
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Marital
+                                    Status:<span class="text-danger">
+                                        *</span></label>
+                                <!-- <input type="text" id="mStatus" 
+                                    placeholder="Enter Marital Status" onblur="validate(5)"> </div> -->
+                                <select name="MaritalStatus" id="mStatus" name="mStatus" class="form-control "
+                                    onblur="validate(5)">
+                                    <option value="">-----select-----</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Unmarried">Unmarried</option>
+                                    <option value="Widow">Widow</option>
+                                    <option value="Divorcee">Divorcee</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Mobile No: <span class="text-danger">*</span>
+                                </label> <input type="number" id="mob" name="mob"
+                                    placeholder="Enter Mobile Number" onblur="validate(5)"> </div>
+                        </div> -->
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-7 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Whether earlier a member of Employee's Provident Fund Scheme, 1952
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="mEPFS1" name="mEPFS" value="Yes">
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="mEPFS2" name="mEPFS" value="No">
+                            </label>
+                        </div>
+
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-7 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    Whether earlier a member of Employee's Pension Scheme, 1995
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="mEPSs1" name="mEPS" value="Yes">
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="mEPSs2" name="mEPS" value="No">
+                            </label>
+                        </div>
+
+                        <hr>
+                        <div id="scheem">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                        class="form-control-label px-3">Universal Account Number<span>
+                                        </span></label> <input type="text" id="UAN" name="UAN"
+                                        placeholder="Enter Universal Account Number"> </div>
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                        class="form-control-label px-3">Previous PF Account Number
+                                    </label> <input type="text" id="prevPFNumber" name="prevPFNumber"
+                                        placeholder="Enter Previous PF Account Number"> </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                        class="form-control-label px-3">Date of exit from previous employment:
+                                        (DD/MM/YYYY)</label> <input type="date" id="dExit" name="dExit"
+                                        placeholder="Enter Date of exit from previous employment">
+                                </div>
+                                <div class="form-group col-sm-6 flex-column d-flex" style="margin-top: 20px;"
+                                    id="scheme-div"> <label class="form-control-label px-3">Scheme certificate No: (if
+                                        issue)</label> <input type="text" id="schemeCertNo" name="schemeCertNo"
+                                        placeholder="Enter Scheme certificate No">
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                        class="form-control-label px-3">Pension Payment Order (PPO) No. (if issued)
+                                    </label> <input type="text" id="PPONO" name="PPONo"
+                                        placeholder="Enter Pension Payment Order (PPO) No"> </div>
+                            </div>
+
+                            <hr>
+                        </div>
+                        <div class="row justify-content-start text-left">
+                            <div class="form-group col-3 flex-column d-flex">
+                                <label class="form-control-label px-3">
+                                    International Worker:<span class="text-danger"> *</span>
+                                </label>
+                            </div>
+
+                            <label class="col-sm-1" for="yes">Yes
+                                <input type="radio" id="IWorkerY" name="IWorker" value="Yes">
+                            </label>
+
+                            <label class="col-sm-1" for="no">No
+                                <input type="radio" id="IWorkerN" name="IWorker" value="No">
+                            </label>
+                        </div>
+                        <div id="worker">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                        class="form-control-label px-3">If yes, state country of origin (India/Name of
+                                        other country): </label> <input type="text" id="countryOrigin"
+                                        name="countryOrigin" placeholder="Enter state country of origin"> </div>
+                                <div class="form-group col-sm-6 flex-column d-flex" style="margin-top: 19px;"> <label
+                                        class="form-control-label px-3">Passport No. <span class="text-danger">
+                                            *</span></label> <input type="text" id="passportNo" name="passportNo"
+                                        placeholder="Enter Passport No" onblur="validate(6)"> </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label style="font-size: 13px;" class="form-control-label px-3">Passport Validity
+                                        FromDate(DD/MM/YYYY)<span class="text-danger">*</span>
+                                    </label> <input type="date" id="vPassportStart" name="vPassportStart"
+                                        placeholder="Enter Passport Validity From Date" onblur="validate(7)">
+                                </div>
+
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label style="font-size: 13px;" class="form-control-label px-3">Passport Validity
+                                        ToDate(DD/MM/YYYY)<span class="text-danger">*</span>
+                                    </label> <input type="date" id="vPassportEnd" name="vPassportEnd"
+                                        placeholder="Enter Passport Validity TO Date" onblur="validate(8)">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="col-md-12">
+                                <p class="form-control-label px-3"><strong>KYC Details:</strong>(attach self attested
+                                    copies of
+                                    following KYCs)</p>
+                            </div>
+                            <!-- <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Bank Account No. & IFS Code<span
+                                        class="text-danger"> *</span></label> <input type="text" id="bAccNo"
+                                    name="bAccNo" placeholder="Enter Bank Account No. & IFS Code" onblur="validate(3)">
+                            </div> -->
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">AADHAAR Number<span class="text-danger">
+                                        *</span></label> <input type="number" id="aadhaarNo" name="aadhaarNo"
+                                    placeholder="Enter AADHAAR Number" onblur="validate(9)"> </div>
+                        </div>
+
+                        <!-- <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Permanant Account Number (PAN), if available</label>
+                                <input type="text" id="panNo" name="panNo" placeholder="Enter Permanant Account Number">
+                            </div>
+                        </div>
+ -->
+                        <div class="row justify-content-center">
+                            <div class="form-group col-sm-6"> <button type="submit"
+                                    class="submit_button btn-block submit-btn">Submit</button> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript'>function validate(val) {
+            v1 = document.getElementById("fname");
+            v2 = document.getElementById("lname");
+            v3 = document.getElementById("gender");
+            v4 = document.getElementById("email");
+            v5 = document.getElementById("mStatus");
+            v6 = document.getElementById("passportNo");
+            v7 = document.getElementById("vPassportStart");
+            v8 = document.getElementById("vPassportEnd");
+            v9 = document.getElementById("aadhaarNo");
+
+            flag1 = true;
+            flag2 = true;
+            flag3 = true;
+            flag4 = true;
+            flag5 = true;
+            flag6 = true;
+            flag7 = true;
+            flag8 = true;
+            flag9 = true;
+
+            if (val >= 1 || val == 0) {
+                if (v1.value == "") {
+                    v1.style.borderColor = "red";
+                    flag1 = false;
+                }
+                else {
+                    v1.style.borderColor = "green";
+                    flag1 = true;
+                }
+            }
+
+            if (val >= 2 || val == 0) {
+                if (v2.value == "") {
+                    v2.style.borderColor = "red";
+                    flag2 = false;
+                }
+                else {
+                    v2.style.borderColor = "green";
+                    flag2 = true;
+                }
+            }
+            if (val >= 3 || val == 0) {
+                if (v3.value == "") {
+                    v3.style.borderColor = "red";
+                    flag3 = false;
+                }
+                else {
+                    v3.style.borderColor = "green";
+                    flag3 = true;
+                }
+            }
+            if (val >= 4 || val == 0) {
+                if (v4.value == "") {
+                    v4.style.borderColor = "red";
+                    flag4 = false;
+                }
+                else {
+                    v4.style.borderColor = "green";
+                    flag4 = true;
+                }
+            }
+            if (val >= 5 || val == 0) {
+                if (v5.value == "") {
+                    v5.style.borderColor = "red";
+                    flag5 = false;
+                }
+                else {
+                    v5.style.borderColor = "green";
+                    flag5 = true;
+                }
+            }
+            if (val >= 6 || val == 0) {
+                if (v6.value == "") {
+                    v6.style.borderColor = "red";
+                    flag6 = false;
+                }
+                else {
+                    v6.style.borderColor = "green";
+                    flag6 = true;
+                }
+            }
+            if (val >= 7 || val == 0) {
+                if (v7.value == "") {
+                    v7.style.borderColor = "red";
+                    flag7 = false;
+                }
+                else {
+                    v7.style.borderColor = "green";
+                    flag7 = true;
+                }
+            }
+            if (val >= 8 || val == 0) {
+                if (v8.value == "") {
+                    v8.style.borderColor = "red";
+                    flag8 = false;
+                }
+                else {
+                    v8.style.borderColor = "green";
+                    flag8 = true;
+                }
+            }
+            if (val >= 9 || val == 0) {
+                if (v9.value == "") {
+                    v9.style.borderColor = "red";
+                    flag9 = false;
+                }
+                else {
+                    v9.style.borderColor = "green";
+                    flag9 = true;
+                }
+            }
+
+
+            flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6 && flag7 && flag8 && flag9;
+
+            return flag;
+        }</script>
+
+    <script type='text/javascript'>
+
+        $(document).ready(function () {
+            $(".alert").hide();
+            $(".alert-d").hide();
+            $(".alert-s").hide();
+            let searchParams = new URLSearchParams(window.location.search)
+            searchParams.has('application_id') // true
+            let param = searchParams.get('application_id')
+            getDraftDataById(param);
+            $('#mEPFS2').prop("checked", true);
+            $('#mEPSs2').prop("checked", true);
+            $('#IWorkerN').prop("checked", true);
+            $("#fNamebox").prop("checked", 'checked');
+            if ($("#mEPFS1").prop("checked") == true || $("#mEPSs1").prop("checked") == true)
+                $('#scheem').show();
+            else
+                $('#scheem').hide();
+            $("#mEPFS1").click(() => {
+                if ($("#mEPSs2").prop("checked") == true)
+                    $('#scheem').show();
+                else
+                    $('#scheem').show();
+            });
+            $("#mEPSs1").click(() => {
+                $('#scheem').show();
+            });
+            $("#mEPFS2").click(() => {
+                if ($("#mEPSs1").prop("checked") == true)
+                    $('#scheem').show();
+                else
+                    $('#scheem').hide();
+            });
+            $("#mEPSs2").click(() => {
+                if ($("#mEPSs1").prop("checked") == true)
+                    $('#scheem').show();
+                else if ($("#mEPFS2").prop("checked") == true)
+                    $('#scheem').hide();
+            });
+            if ($("#IWorkerN").prop("checked") == true)
+                $("#worker").hide();
+            else
+                $("#worker").show();
+            $("#IWorkerN").click(() => {
+                $("#worker").hide();
+
+            });
+            $("#IWorkerY").click(() => {
+                $("#worker").show();
+
+            })
+            // $("#panNo").on('keyup', () => {
+            //     var data = $("#panNo").val()
+            //     $("#panNo").val($("#panNo").val().toUpperCase());
+
+            // })
+            $(".submit_button").click(function (e) {
+                e.preventDefault();
+                let validate = validateForm();
+                if (validate == false) {
+                    $(".alert-d").show();
+                    $('body, html').animate({ scrollTop: $('.alert-d').offset().top }, 'slow');
+                    $('.alert-s').hide();
+                    return false;
+                }
+
+                let countryOrigin = $('#countryOrigin').val().replaceAll(',', ';');
+
+                $.ajax({
+                    type: 'POST',
+                    url: "http://20.207.198.140:3000/saveData",
+                    crossDomain: true,
+                    data: JSON.stringify({
+                        "application_id": param,
+                        "type": "PF",
+                        "Name of the Member": $('#fname').val(),
+                        "Father Name": $('#lname').val(),
+                        "Gender": $('#gender option:selected').val(),
+                        "Maritial Status": $('#mStatus option:selected').val(),
+                        "Email ID": $('#email').val(),
+                        "UAN": $('#UAN').val(),
+                        "Previous PF Account Number": $('#prevPFNumber').val(),
+                        "date of exit from previous employement": $('#dExit').val(),
+                        "Scheme certificate No": $('#schemeCertNo').val(),
+                        "Pension Payment Order No": $('#PPONO').val(),
+                        "state country of origin": countryOrigin,
+                        "Passport No": $('#passportNo').val(),
+                        "Validity Of Passport From Date": $('#vPassportStart').val(),
+                        "Validity of Passport To Date": $('#vPassportEnd').val(),
+                        "Aadhaar Number": $('#aadhaarNo').val(),
+                    }),
+                    success: function (data) {
+                        $(".alert-s").show();
+                        removecss();
+                        $('#form3 input[type="text"]').val('');
+                        $(".alert-d").hide();
+                    },
+                    error: function (e) {
+
+                        console.log(e);
+                    },
+                    dataType: "json",
+                    contentType: "application/json"
+                });
+                function validateForm() {
+                    if ($('#fname').val() == '') { $('#fname').css({ 'border-color': 'red' }); return false; }
+                    if ($('#lname').val() == '') { $('#lname').css({ 'border-color': 'red' }); return false; }
+                    // if ($('#dob').val() == '') { $('#dob').css({ 'border-color': 'red' }); return false; }
+                    if ($('#gender option:selected').val() == '') { $('#gender').css({ 'border-color': 'red' }); return false; }
+                    if ($('#mStatus option:selected').val() == '') { $('#mStatus').css({ 'border-color': 'red' }); return false; }
+                    if ($('#email').val() == '') { $('#email').css({ 'border-color': 'red' }); return false; }
+                    // if ($('#mob').val() == '') { $('#mob').css({ 'border-color': 'red' }); return false; }
+                    //                    if ($('#UAN').val() == '') { $('#UAN').css({ 'border-color': 'red' }); return false; }
+                    //                    if ($('#prevPFNumber').val() == '') { $('#prevPFNumber').css({ 'border-color': 'red' }); return false; }
+                    //                    if ($('#dExit').val() == '') { $('#dExit').css({ 'border-color': 'red' }); return false; }
+                    //                    if ($('#schemeCertNo').val() == '') { $('#schemeCertNo').css({ 'border-color': 'red' }); return false; }
+                    //                    if ($('#PPONO').val() == '') { $('#PPONO').css({ 'border-color': 'red' }); return false; }
+                    //                    if ($('#countryOrigin').val() == '') { $('#countryOrigin').css({ 'border-color': 'red' }); return false; }
+                    if ($('#passportNo').val() == '') { $('#passportNo').css({ 'border-color': 'red' }); return false; }
+                    if ($('#vPassportStart').val() == '') { $('#vPassportStart').css({ 'border-color': 'red' }); return false; }
+                    if ($('#vPassportEnd').val() == '') { $('#vPassportEnd').css({ 'border-color': 'red' }); return false; }
+                    if ($('#aadhaarNo').val() == '') { $('#aadhaarNo').css({ 'border-color': 'red' }); return false; }
+                    return true;
+                }
+                function removecss() {
+                    $('#fname').val('').css({ "border": "1px solid #ccc" });
+                    $('#lname').val('').css({ "border": "1px solid #ccc" });
+                    $('#gender option:first').prop('selected', 'selected');
+                    $('#mStatus option:first').prop('selected', 'selected');
+                    $('#email').val('').css({ "border": "1px solid #ccc" });
+                    $('#aadhaarNo').val('').css({ "border": "1px solid #ccc" });
+                    $('#vPassportStart').val('').css({ "border": "1px solid #ccc" });
+                    $('#vPassportEnd').val('').css({ "border": "1px solid #ccc" });
+                    $('#passportNo').val('').css({ "border": "1px solid #ccc" });
+                    $('#countryOrigin').val('').css({ "border": "1px solid #ccc" });
+                    $('#IWorkerN').prop('checked', true);
+                    $('#schemeCertNo').val('').css({ "border": "1px solid #ccc" });
+                    $('#PPONO').val('').css({ "border": "1px solid #ccc" });
+                    $('#prevPFNumber').val('').css({ "border": "1px solid #ccc" });
+                    $('#dExit').val('').css({ "border": "1px solid #ccc" });
+                    $('#mEPSs2').prop('checked', true);
+                    $('#mEPFS2').prop('checked', true);
+                    $('#UAN').val('').css({ "border": "1px solid #ccc" });
+
+                }
+            });
+
+
+        });
+
+
+        //FUNCTION FOR GEETING DRAFY DATA
+        function getDraftDataById(id) {
+            $.ajax({
+                type: 'GET',
+                url: "http://20.207.198.140:3000/getPfData/" + id,
+                crossDomain: true,
+                data: JSON.stringify(),
+                success: function (data) {
+                    let resp = JSON.stringify(data)
+                    let bankData = JSON.parse(resp);
+                    document.getElementById("fname").value = (bankData.MemberName);
+                    document.getElementById("lname").value = (bankData.Father_or_Spouse_Name);
+                    document.getElementById("gender").value = (bankData.Gender);
+                    document.getElementById("mStatus").value = (bankData.Marital_Status);
+                    document.getElementById("email").value = (bankData.Email);
+                    document.getElementById("UAN").value = (bankData.UAN_Number);
+                    document.getElementById("prevPFNumber").value = (bankData.Pre_PF_Number);
+                    document.getElementById("dExit").value = (bankData.Previous_employment_exit_date);
+                    document.getElementById("schemeCertNo").value = (bankData.schemeCertNo);
+                    document.getElementById("PPONO").value = (bankData.PPO_no);
+                    document.getElementById("countryOrigin").value = (bankData.Origin_state_or_country).replaceAll(';', ',');
+                    document.getElementById("passportNo").value = (bankData.PassporNo);
+                    document.getElementById("vPassportStart").value = (bankData.Passport_Validity_From_Date);
+                    document.getElementById("vPassportEnd").value = (bankData.Passport_Validity_To_Date);
+                    document.getElementById("aadhaarNo").value = (bankData.Aadhaar_Number);
+
+                    //$('#form2 input[type="text"]').val('');
+                },
+                error: function (e) {
+                    console.log(e);
+                },
+                dataType: "json",
+                contentType: "application/json"
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>

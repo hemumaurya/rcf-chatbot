@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Rashtriya Chemicals and Fertilizers Limited</title>
+    <link rel="shortcut icon" href="http://20.207.198.140/rcf-candidate_onboarding/images/favicon.ico"
+        type="image/x-icon">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        body {
+            color: #000;
+            overflow-x: hidden;
+            height: 100%;
+            background-image: url("https://i.imgur.com/GMmCQHC.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+
+        .card {
+            padding: 30px 40px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border: none !important;
+            transition: 0.3s;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .blue-text {
+            color: #00BCD4
+        }
+
+        .form-control-label {
+            margin-bottom: 0
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 8px 15px;
+            border-radius: 5px !important;
+            margin: 5px 0px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            font-size: 18px !important;
+            font-weight: 300
+        }
+
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00BCD4;
+            outline-width: 0;
+            font-weight: 400
+        }
+
+        .btn-block {
+            text-transform: uppercase;
+            font-size: 15px !important;
+            font-weight: 400;
+            height: 43px;
+            cursor: pointer
+        }
+
+        .btn-block:hover {
+            color: #fff !important
+        }
+
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+    </style>
+</head>
+
+<body className='snippet-body'>
+
+    <header class="rc-head">
+        <div class="container">
+            <div class="rch-in">
+                <div class="logo">
+                    <a href="https://www.rcfltd.com"><img
+                            src="http://20.207.198.140/rcf-candidate_onboarding/images/logo.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3>Rashtriya Chemicals and Fertilizers Ltd. Bombay Unit.</h3>
+                <h3>Salary Payment Through Direct Credit / RTGS</h3>
+
+                <div class="alert alert-d alert-danger">
+                    Please fill all mandatory fields
+                </div>
+
+                <div class="alert alert-s alert-success">
+                    Data Saved succesfully
+                </div>
+
+
+
+                <div class="card">
+                    <form class="form-card" id="form2" onsubmit="event.preventDefault()">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Name :-<span class="text-danger"> *</span></label>
+                                <input type="text" id="fname" name="mName" placeholder="Enter Name"
+                                    onblur="validate(1)">
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Designation :-<span class="text-danger">
+                                        *</span></label> <input type="text" id="dname" name="dName"
+                                    placeholder="Enter Designation" onblur="validate(2)"> </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">PSA / Employee No.</label>
+                                <input type="text" id="empNo" name="dob" placeholder="Enter PSA / Employee No.">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <p class="text-left">I gave consent for direct credit of my salary and all other dues to my bank
+                            account through DIRECT CREDIT/RTGS as per details given below.</p>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Name of the Bank: <span class="text-danger">
+                                        *</span></label> <input type="text" id="bankName" name="bankName"
+                                    placeholder="Enter Bank Name" onblur="validate(4)"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Name of the Branch: <span class="text-danger">
+                                        *</span></label> <input type="text" id="branchName" name="branchName"
+                                    placeholder="Enter Branch Name" onblur="validate(5)"> </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Address of Bank / Ph No: <span class="text-danger">
+                                        *</span></label> <input type="text" id="bankAddress" name="mob"
+                                    placeholder="Enter Address of Bank / Ph No" onblur="validate(6)"> </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Bank Account Number (self)<span class="text-danger">
+                                        *</span></label> <input type="number" id="BAN" name="BAN"
+                                    placeholder="Enter Bank Account Number" onblur="validate(7)"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Bank IFSC Code<span class="text-danger">
+                                        *</span></label> <input type="text" id="ifscCode" name="ifscCode"
+                                    placeholder="Enter IFSC Code" onblur="validate(8)"> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Bank MICR No<span class="text-danger">
+                                        *</span></label> <input type="text" id="micrNo" name="micrNo"
+                                    placeholder="Enter MICR No" onblur="validate(9)"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">PAN No<span class="text-danger"> *</span></label>
+                                <input type="text" id="panNo" name="panNo" placeholder="Enter PAN No"
+                                    onblur="validate(10)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Internal Tel. No.</label>
+                                <input type="number" id="telNo" name="telNo" placeholder="Enter Tel. No.">
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Mobile No<span class="text-danger"> *</span></label>
+                                <input type="number" id="mob" name="mob" placeholder="Enter Mobile No"
+                                    onblur="validate(11)">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">RCF Email Id (only)</label>
+                                <input type="text" id="rcfEmail" name="rcfEmail" placeholder="Enter RCF Email Id">
+                            </div>
+
+                            <!-- <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">PIN<span class="text-danger"> *</span></label>
+                                <input type="number" id="pin" name="pin" placeholder="Enter PIN" onblur="validate(13)">
+                            </div>
+ -->
+
+
+                        </div>
+
+                        <!-- <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Permanent Resident Address<span class="text-danger">*</span>
+                                        </label> <input type="text" id="pResiAdd" name="pResiAdd"
+                                    placeholder="Enter Permanent Resident Address" onblur="validate(14)"> </div>
+
+                        </div> -->
+
+                        <!-- <hr> -->
+
+                        <div class="row justify-content-center">
+                            <div class="form-group col-sm-6"> <button type="submit"
+                                    class="submit_button btn-block submit-btn">Submit</button> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript'>function validate(val) {
+            v1 = document.getElementById("fname");
+            v2 = document.getElementById("dname");
+            //v3 = document.getElementById("empNo");
+            v4 = document.getElementById("bankName");
+            v5 = document.getElementById("branchName");
+            v6 = document.getElementById("bankAddress");
+            v7 = document.getElementById("BAN");
+            v8 = document.getElementById("ifscCode");
+            v9 = document.getElementById("micrNo");
+            v10 = document.getElementById("panNo");
+            v11 = document.getElementById("mob");
+            // v12 = document.getElementById("rcfEmail");
+            // v13 = document.getElementById("pin");
+            // v14 = document.getElementById("pResiAdd");
+
+            flag1 = true;
+            flag2 = true;
+            flag3 = true;
+            flag4 = true;
+            flag5 = true;
+            flag6 = true;
+            flag7 = true;
+            flag8 = true;
+            flag9 = true;
+            flag10 = true;
+            flag11 = true;
+            flag12 = true;
+            flag13 = true;
+            flag14 = true;
+
+            if (val >= 1 || val == 0) {
+                if (v1.value == "") {
+                    v1.style.borderColor = "red";
+                    flag1 = false;
+                }
+                else {
+                    v1.style.borderColor = "green";
+                    flag1 = true;
+                }
+            }
+
+            if (val >= 2 || val == 0) {
+                if (v2.value == "") {
+                    v2.style.borderColor = "red";
+                    flag2 = false;
+                }
+                else {
+                    v2.style.borderColor = "green";
+                    flag2 = true;
+                }
+            }
+            // if (val >= 3 || val == 0) {
+            //     if (v3.value == "") {
+            //         v3.style.borderColor = "red";
+            //         flag3 = false;
+            //     }
+            //     else {
+            //         v3.style.borderColor = "green";
+            //         flag3 = true;
+            //     }
+            // }
+            if (val >= 4 || val == 0) {
+                if (v4.value == "") {
+                    v4.style.borderColor = "red";
+                    flag4 = false;
+                }
+                else {
+                    v4.style.borderColor = "green";
+                    flag4 = true;
+                }
+            }
+            if (val >= 5 || val == 0) {
+                if (v5.value == "") {
+                    v5.style.borderColor = "red";
+                    flag5 = false;
+                }
+                else {
+                    v5.style.borderColor = "green";
+                    flag5 = true;
+                }
+            }
+            if (val >= 6 || val == 0) {
+                if (v6.value == "") {
+                    v6.style.borderColor = "red";
+                    flag6 = false;
+                }
+                else {
+                    v6.style.borderColor = "green";
+                    flag6 = true;
+                }
+            }
+
+            if (val >= 7 || val == 0) {
+                if (v7.value == "") {
+                    v7.style.borderColor = "red";
+                    flag7 = false;
+                }
+                else {
+                    v7.style.borderColor = "green";
+                    flag7 = true;
+                }
+            }
+
+            if (val >= 8 || val == 0) {
+                if (v8.value == "") {
+                    v8.style.borderColor = "red";
+                    flag8 = false;
+                }
+                else {
+                    v8.style.borderColor = "green";
+                    flag8 = true;
+                }
+            }
+
+            if (val >= 9 || val == 0) {
+                if (v9.value == "") {
+                    v9.style.borderColor = "red";
+                    flag9 = false;
+                }
+                else {
+                    v9.style.borderColor = "green";
+                    flag9 = true;
+                }
+            }
+
+            if (val >= 10 || val == 0) {
+                if (v10.value == "") {
+                    v10.style.borderColor = "red";
+                    flag10 = false;
+                }
+                else {
+                    v10.style.borderColor = "green";
+                    flag10 = true;
+                }
+            }
+
+            if (val >= 11 || val == 0) {
+                if (v11.value == "") {
+                    v11.style.borderColor = "red";
+                    flag11 = false;
+                }
+                else {
+                    v11.style.borderColor = "green";
+                    flag11 = true;
+                }
+            }
+
+            // if (val >= 12 || val == 0) {
+            //     if (v12.value == "") {
+            //         v12.style.borderColor = "red";
+            //         flag12 = false;
+            //     }
+            //     else {
+            //         v12.style.borderColor = "green";
+            //         flag12 = true;
+            //     }
+            // }
+
+            // if (val >= 13 || val == 0) {
+            //     if (v13.value == "") {
+            //         v13.style.borderColor = "red";
+            //         flag13 = false;
+            //     }
+            //     else {
+            //         v13.style.borderColor = "green";
+            //         flag13 = true;
+            //     }
+            // }
+
+            // if (val >= 14 || val == 0) {
+            //     if (v14.value == "") {
+            //         v14.style.borderColor = "red";
+            //         flag14 = false;
+            //     }
+            //     else {
+            //         v14.style.borderColor = "green";
+            //         flag14 = true;
+            //     }
+            // }
+
+            flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6 && flag7 && flag8 && flag9 && flag10 && flag11 && flag12 && flag13 && flag14;
+
+            return flag;
+        }</script>
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $(".alert").hide();
+            $(".alert-d").hide();
+            $(".alert-s").hide();
+            let searchParams = new URLSearchParams(window.location.search)
+            searchParams.has('application_id') // true
+            let param = searchParams.get('application_id')
+
+            getDraftDataById(param);
+
+            console.log("param ID " + param)
+            $("#panNo").on('keyup', () => {
+                var data = $("#panNo").val()
+                $("#panNo").val($("#panNo").val().toUpperCase());
+
+            })
+            $(".submit_button").click(function (e) {
+                e.preventDefault();
+                let validate = validateForm();
+                if (validate == false) {
+                    $(".alert-d").show();
+                    $('body, html').animate({ scrollTop: $('.alert-d').offset().top }, 'slow');
+                    $('.alert-s').hide();
+                    return false;
+                }
+                let branchName = $('#branchName').val().replaceAll(',', ';');
+                let bankAddress = $('#bankAddress').val().replaceAll(',', ';');
+                // let permanentResidentAddress = $('#pResiAdd').val().replace(',', ';');
+
+
+                $.ajax({
+                    type: 'POST',
+                    url: "http://20.207.198.140:3000/saveData",
+                    crossDomain: true,
+                    data: JSON.stringify({
+                        "application_id": param,
+                        "type": "bank",
+                        "Name": $('#fname').val(),
+                        "Designation": $('#dname').val(),
+                        "PSA/Employee No": $('#empNo').val(),
+                        "Name of the Bank": $('#bankName').val(),
+                        "Name of the Branch": branchName,
+                        "Bank Address or Phone": bankAddress,
+                        "Bank Account Number": $('#BAN').val(),
+                        "Bank IFSC Code": $('#ifscCode').val(),
+                        "Bank MICR No": $('#micrNo').val(),
+                        "PAN No": $('#panNo').val(),
+                        "Internal Tel. No": $('#telNo').val(),
+                        "Mobile No": $('#mob').val(),
+                        "RCF Email id": $('#rcfEmail').val(),
+                        // "Permanent Resident Address": permanentResidentAddress,
+                        "Pin": $('#pin').val(),
+                    }),
+                    success: function (data) {
+                        $(".alert-s").show();
+                        removecss();
+                        $('#form2 input[type="text"]').val('');
+                        $(".alert-d").hide();
+                    },
+                    error: function (e) {
+
+                        console.log(e);
+                    },
+                    dataType: "json",
+                    contentType: "application/json"
+                });
+                function validateForm() {
+                    if ($('#fname').val() == '') { $('#fname').css({ 'border-color': 'red' }); return false; }
+                    if ($('#dname').val() == '') { $('#dname').css({ 'border-color': 'red' }); return false; }
+                    if ($('#bankAddress').val() == '') { $('#bankAddress').css({ 'border-color': 'red' }); return false; }
+                    if ($('#bankName').val() == '') { $('#bankName').css({ 'border-color': 'red' }); return false; }
+                    if ($('#branchName').val() == '') { $('#branchName').css({ 'border-color': 'red' }); return false; }
+                    if ($('#BAN').val() == '') { $('#BAN').css({ 'border-color': 'red' }); return false; }
+                    if ($('#ifscCode').val() == '') { $('#ifscCode').css({ 'border-color': 'red' }); return false; }
+                    if ($('#micrNo').val() == '') { $('#micrNo').css({ 'border-color': 'red' }); return false; }
+                    if ($('#panNo').val() == '') { $('#panNo').css({ 'border-color': 'red' }); return false; }
+                    if ($('#mob').val() == '') { $('#mob').css({ 'border-color': 'red' }); return false; }
+                    if ($('#pin').val() == '') { $('#pin').css({ 'border-color': 'red' }); return false; }
+                    return true;
+                }
+                function removecss() {
+                    $('#fname').val('').css({ "border": "1px solid #ccc" });
+                    $('#dname').val('').css({ "border": "1px solid #ccc" });
+                    $('#bankAddress').val('').css({ "border": "1px solid #ccc" });
+                    $('#bankName').val('').css({ "border": "1px solid #ccc" });
+                    $('#branchName').val('').css({ "border": "1px solid #ccc" });
+                    $('#empNo').val('').css({ "border": "1px solid #ccc" });
+                    $('#BAN').val('').css({ "border": "1px solid #ccc" });
+                    $('#ifscCode').val('').css({ "border": "1px solid #ccc" });
+                    $('#micrNo').val('').css({ "border": "1px solid #ccc" });
+                    $('#panNo').val('').css({ "border": "1px solid #ccc" });
+                    $('#mob').val('').css({ "border": "1px solid #ccc" });
+                    $('#rcfEmail').val('').css({ "border": "1px solid #ccc" });
+                    $('#pin').val('').css({ "border": "1px solid #ccc" });
+                    $('#telNo').val('').css({ "border": "1px solid #ccc" });
+
+                }
+
+            });
+        });
+
+        //FUNCTION FOR GEETING DRAFY DATA
+        function getDraftDataById(id) {
+            $.ajax({
+                type: 'GET',
+                url: "http://20.207.198.140:3000/getBankData/" + id,
+                crossDomain: true,
+                data: JSON.stringify(),
+                success: function (data) {
+                    let resp = JSON.stringify(data)
+                    let bankData = JSON.parse(resp);
+                    document.getElementById("fname").value = (bankData.Name);
+                    document.getElementById("dname").value = (bankData.Designation);
+                    document.getElementById("empNo").value = (bankData.PSA_OR_Employee_No);
+                    document.getElementById("bankName").value = (bankData.BankName);
+                    document.getElementById("branchName").value = (bankData.BranchName).replaceAll(';', ',');
+                    document.getElementById("bankAddress").value = (bankData.Address_of_Bank_or_Phone_No).replaceAll(';', ',');
+                    document.getElementById("BAN").value = (bankData.Bank_Account_Number);
+                    document.getElementById("ifscCode").value = (bankData.Bank_IFSC_Code);
+                    document.getElementById("micrNo").value = (bankData.Bank_MICR_No);
+                    document.getElementById("panNo").value = (bankData.PANNo);
+                    document.getElementById("telNo").value = (bankData.Internal_Tel_No);
+                    document.getElementById("mob").value = (bankData.MobileNo);
+                    document.getElementById("rcfEmail").value = (bankData.RCF_Email_id);
+                    
+                    //$('#form2 input[type="text"]').val('');
+                },
+                error: function (e) {
+                    console.log(e);
+                },
+                dataType: "json",
+                contentType: "application/json"
+            });
+        }
+    </script>
+
+</body>
+
+</html>
